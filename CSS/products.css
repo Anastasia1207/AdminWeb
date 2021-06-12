@@ -7,4 +7,9 @@
 .cc-col{
     align-items: flex-end;
     margin-right: 0px;
+    padding-right: 0px;
+}
+.cc-btn{
+    margin-right: 0px;
+    padding-right: 0px; 
 }
