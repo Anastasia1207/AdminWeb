@@ -1,124 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orders</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="CSS/orders.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- BOOTSTRAP CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/orders.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <main>
-
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"></span>
+              <span class="title"><h2>Buy&Bye</h2></span>
+            </a>
+          </li>
+          <li>
+            <a href="Categories.html">
+              <span class="icon"><i class="bi bi-card-checklist"></i></span>
+              <span class="title">Categories</span>
+            </a>
+          </li>
+          <li>
+            <a href="Products.html">
+              <span class="icon"><i class="bi bi-shop-window"></i></span>
+              <span class="title">Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="Orders.html" class="linked disabled">
+              <span class="icon"><i class="bi bi-cart-check"></i></span>
+              <span class="title">Orders</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
         <div class="container py-5">
-            <div class="container">
-                <table id="myTable" class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Customer</th>
-                            <th scope="col">Products</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">VAT</th>
-                            <th scope="col">Total</th>
-                            <th scope="col">Status</th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <div class="name">Reya Carter</div>
-                                <div> Some street1</div>
-                                <div> Riga</div>
-                                <div> LV-1010</div>
-                                <div> Latvia</div>
-                            </td>
-                            <td>15</td>
-                            <td>500.00 EUR</td>
-                            <td>105.00 EUR</td>
-                            <td>605.00 EUR</td>
-                            <td><span class="badge bg-success">Completed</span></td>
-                            
-                            <td><button type="button" class="btn edit-button">Edit</button></td>
-                            <td><button type="button" class="btn delete-button">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                <div class="name">Lily James</div>
-                                <div> Some street1</div>
-                                <div> Cesis</div>
-                                <div> LV-1111</div>
-                                <div> Latvia</div>
-                            </td>
-                            <td>5</td>
-                            <td>150.00 EUR</td>
-                            <td>31.50.00 EUR</td>
-                            <td>181.50 EUR</td>
-                            <td><span class="badge bg-warning text-dark">Pending</span></td>
-                            <td><button type="button" class="btn edit-button">Edit</button></td>
-                            <td><button type="button" class="btn delete-button">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <div class="name">Sophie Ross</div>
-                                <div> Some street1</div>
-                                <div> Riga</div>
-                                <div> LV-1560</div>
-                                <div> Latvia</div>
-                            </td>
-                            <td>100</td>
-                            <td>1000.00 EUR</td>
-                            <td>210.00 EUR</td>
-                            <td>1210.00 EUR</td>
-                            <td><span class="badge bg-success">Completed</span></td>
-                            <td><button type="button" class="btn edit-button">Edit</button></td>
-                            <td><button type="button" class="btn delete-button">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                <div class="name">Jane Lester</div>
-                                <div> Some street1</div>
-                                <div> Valmiera</div>
-                                <div> LV-1000</div>
-                                <div> Latvia</div>
-                            </td>
-                            <td>1000</td>
-                            <td>10000.00 EUR</td>
-                            <td>2100.00 EUR</td>
-                            <td>12100.00 EUR</td>
-                            <td><span class="badge bg-danger">Canceled</span></td>
-                            <td><button type="button" class="btn edit-button">Edit</button></td>
-                            <td><button type="button" class="btn delete-button">Delete</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+          <div class="container">
+            <table id="myTable" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Customer</th>
+                  <th scope="col">Products</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">VAT</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Status</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <div class="name">Reya Carter</div>
+                    <div>Some street1</div>
+                    <div>Riga</div>
+                    <div>LV-1010</div>
+                    <div>Latvia</div>
+                  </td>
+                  <td>15</td>
+                  <td>500.00 EUR</td>
+                  <td>105.00 EUR</td>
+                  <td>605.00 EUR</td>
+                  <td><span class="badge bg-success">Completed</span></td>
 
-            </div>
+                  <td>
+                    <button type="button" class="btn edit-button">Edit</button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <div class="name">Lily James</div>
+                    <div>Some street1</div>
+                    <div>Cesis</div>
+                    <div>LV-1111</div>
+                    <div>Latvia</div>
+                  </td>
+                  <td>5</td>
+                  <td>150.00 EUR</td>
+                  <td>31.50.00 EUR</td>
+                  <td>181.50 EUR</td>
+                  <td>
+                    <span class="badge bg-warning text-dark">Pending</span>
+                  </td>
+                  <td>
+                    <button type="button" class="btn edit-button">Edit</button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <div class="name">Sophie Ross</div>
+                    <div>Some street1</div>
+                    <div>Riga</div>
+                    <div>LV-1560</div>
+                    <div>Latvia</div>
+                  </td>
+                  <td>100</td>
+                  <td>1000.00 EUR</td>
+                  <td>210.00 EUR</td>
+                  <td>1210.00 EUR</td>
+                  <td><span class="badge bg-success">Completed</span></td>
+                  <td>
+                    <button type="button" class="btn edit-button">Edit</button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>
+                    <div class="name">Jane Lester</div>
+                    <div>Some street1</div>
+                    <div>Valmiera</div>
+                    <div>LV-1000</div>
+                    <div>Latvia</div>
+                  </td>
+                  <td>1000</td>
+                  <td>10000.00 EUR</td>
+                  <td>2100.00 EUR</td>
+                  <td>12100.00 EUR</td>
+                  <td><span class="badge bg-danger">Canceled</span></td>
+                  <td>
+                    <button type="button" class="btn edit-button">Edit</button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn delete-button">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
 
     <script src="JS/orders.js"></script>
-</body>
-
+  </body>
 </html>
