@@ -6,10 +6,10 @@
 body {
   overflow: hidden;
 }
-/* .container {
-  position: relative;
+.container {
+  /* position: relative; */
   width: 100%;
-} */
+}
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -21,6 +21,7 @@ h2 {
   background: white;
   transition: 0.5s;
   overflow: hidden;
+  border-radius: 10px;
 }
 .navigation ul {
   position: absolute;
@@ -32,9 +33,10 @@ h2 {
   position: relative;
   width: 100%;
   list-style: none;
+  border-radius: 10px;
 }
 .navigation ul li:hover {
-  background: rgb(129, 215, 236);
+  background: #20cbd1;
 }
 .navigation ul li:nth-child(1) {
   margin-bottom: 20px;
@@ -67,7 +69,8 @@ h2 {
   white-space: nowrap;
 }
 .disabled {
-  background-color: rgb(37, 179, 214);
+  background-color: #1aa2a7;
+  border-radius: 10px;
 }
 /* ---------- TOPBAR ---------- */
 .main {
@@ -93,8 +96,6 @@ h2 {
 .search {
   position: relative;
   width: 900px;
-  /* margin: 0 10px; */
-  /* padding-top: 150px; */
 }
 .search label {
   position: relative;
@@ -117,7 +118,8 @@ h2 {
 */ .button {
   padding-right: 90px;
 }
-/* Products/Categories */
+
+/* ======== Products/Categories ======== */
 .edit-button {
   color: rgba(3, 4, 56, 0.562);
 }
@@ -127,7 +129,6 @@ h2 {
 .categories-btn {
   margin-top: 150px;
   float: right;
-  /* margin-left: 350px; */
 }
 
 /* ======== FOOTER ======== */

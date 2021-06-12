@@ -4,3 +4,4 @@ $(document).ready( function () {
 $('.delete-button').on('click', function() {
     $(this).parent().parent().remove();
 });
+
