@@ -116,3 +116,15 @@ body {
 .delete-button {
   color: deeppink;
 }
+/* ======== FOOTER ======== */
+.footer {
+  position: relative;
+  padding-top: 770px;
+  padding-left: 130px;
+  text-decoration: black;
+}
+.footer-text {
+  font-size: 12px;
+  margin-inline-start: 20px;
+  max-width: 50%;
+}
