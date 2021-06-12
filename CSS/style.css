@@ -32,7 +32,7 @@ body {
   list-style: none;
 }
 .navigation ul li:hover {
-  background: rgb(102, 102, 141);
+  background: rgb(129, 215, 236);
 }
 .navigation ul li:nth-child(1) {
   margin-bottom: 20px;
@@ -64,6 +64,9 @@ body {
   line-height: 60px;
   white-space: nowrap;
 }
+.disabled {
+  background-color: rgb(37, 179, 214);
+}
 /* ---------- TOPBAR ---------- */
 .main {
   position: absolute;
@@ -81,13 +84,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.table-content {
+  margin-top: 100px;
+}
 /* ---------- SEARCH ---------- */
-.search {
+/* /* .search {
   position: relative;
   width: 400px;
   margin: 0 10px;
   /* padding-top: 150px; */
-}
+/* }
 .search label {
   position: relative;
   width: 100%;
@@ -105,9 +111,9 @@ body {
   position: absolute;
   left: 15px;
   top: 6px;
-}
+} */
 .button {
-  padding-right: 100px;
+  padding-right: 90px;
 }
 /* Products/Categories */
 .edit-button {
@@ -116,6 +122,12 @@ body {
 .delete-button {
   color: deeppink;
 }
+.categories-btn {
+  margin-top: 150px;
+  float: right;
+  /* margin-left: 350px; */
+}
+
 /* ======== FOOTER ======== */
 .footer {
   position: relative;
