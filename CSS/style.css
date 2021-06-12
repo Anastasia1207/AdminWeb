@@ -73,7 +73,7 @@ h2 {
 .main {
   position: absolute;
   width: calc(100% - 300px);
-  left: 300px;
+  left: 250px;
   min-height: 100vh;
   background: white;
   transition: 0.5s;
@@ -90,12 +90,12 @@ h2 {
   margin-top: 100px;
 }
 /* ---------- SEARCH ---------- */
-/* /* .search {
+.search {
   position: relative;
-  width: 400px;
-  margin: 0 10px;
+  width: 900px;
+  /* margin: 0 10px; */
   /* padding-top: 150px; */
-/* }
+}
 .search label {
   position: relative;
   width: 100%;
@@ -113,8 +113,8 @@ h2 {
   position: absolute;
   left: 15px;
   top: 6px;
-} */
-.button {
+}
+*/ .button {
   padding-right: 90px;
 }
 /* Products/Categories */
