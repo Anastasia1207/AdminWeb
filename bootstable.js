@@ -1,12 +1,5 @@
-/*
-Bootstable
- @description  Javascript library to make HMTL tables editable, using Bootstrap
- @version 1.1
- @autor Tito Hinostroza
-*/
-"use strict";
-//Global variables
-var params = null;  		//Parameters
+
+var params = null;  		
 var colsEdi =null;
 var newColHtml = '<div class="btn-group pull-right">'+
 '<button id="bEdit" type="button" class="btn btn-sm btn-default" onclick="butRowEdit(this);">' +
@@ -49,8 +42,8 @@ $.fn.SetEditable = function (options) {
       onAdd: function() {}     //Called when added a new row
   };
   params = $.extend(defaults, options);
-  var $tabedi = this;   //Read reference to the current table.
-  $tabedi.find('thead tr').append('<th name="buttons"></th>');  //Add empty column
+  var $tabedi = this;  
+  $tabedi.find('thead tr').append('<th name="buttons"></th>');  
   if (!params.bootstrap) {
     colEdicHtml = '<td name="buttons">'+newColHtml2+'</td>'; 
   }
@@ -168,14 +161,9 @@ function butRowDelete(but) {  //Elimina la fila actual
   $row.remove();
   params.onDelete();
 }
-//Functions that can be called directly
+
 function rowAddNew(tabId, initValues=[]) {  
-  /* Add a new row to a editable table. 
-   Parameters: 
-    tabId       -> Id for the editable table.
-    initValues  -> Optional. Array containing the initial value for the 
-                   new row.
-  */
+
   var $tab_en_edic = $("#"+tabId);  //Table to edit
   var $rows = $tab_en_edic.find('tbody tr');
   //if ($rows.length==0) {
@@ -199,20 +187,7 @@ function rowAddNew(tabId, initValues=[]) {
           i++;
       });
       $tab_en_edic.find('tbody').append('<tr>'+htmlDat+'</tr>');
-  /*} else {
-      //Hay otras filas, podemos clonar la última fila, para copiar los botones
-      var $lastRow = $tab_en_edic.find('tr:last');
-      $lastRow.clone().appendTo($lastRow.parent());  
-      $lastRow = $tab_en_edic.find('tr:last');
-      var $cols = $lastRow.find('td');  //lee campos
-      $cols.each(function() {
-          if ($(this).attr('name')=='buttons') {
-              //Es columna de botones
-          } else {
-              $(this).html('');  //limpia contenido
-          }
-      });
-  }*/
+
   params.onAdd();
 }
 function rowAddNewAndEdit(tabId, initValues=[]) {
@@ -262,23 +237,6 @@ function TableToJson(tabId) {   //Convert table to JSON
 }
 
 
-
-// SEARCH //
-
-// function search_items() {
-//     let input = document.getElementById('searchbar').value
-//     input=input.toLowerCase();
-//     let x = document.getElementsByClassName('items');
-      
-//     for (i = 0; i < x.length; i++) { 
-//         if (!x[i].innerHTML.toLowerCase().includes(input)) {
-//             x[i].style.display="none";
-//         }
-//         else {
-//             x[i].style.display="list-item";                 
-//         }
-//     }
-// }
 
 // ADD BUTTON //
 
