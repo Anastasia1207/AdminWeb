@@ -5,11 +5,11 @@
     color: deeppink;
 }
 .cc-col{
-    align-items: flex-end;
-    margin-right: 0px;
-    padding-right: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 .cc-btn{
-    margin-right: 0px;
-    padding-right: 0px; 
+    margin: 0px;
+    padding: 0px; 
+    align-self: flex-end;
 }
