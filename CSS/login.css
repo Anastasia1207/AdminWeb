@@ -4,3 +4,11 @@
 .Login_btn {
     color: cadetblue;
 }
+.Login_btn  a:link {
+    color: cadetblue;
+    text-decoration: none;
+}
+.Login_btn  a:visited {
+    color: cadetblue;
+    text-decoration: none;
+}
