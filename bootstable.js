@@ -279,3 +279,12 @@ function TableToJson(tabId) {   //Convert table to JSON
 //         }
 //     }
 // }
+
+// ADD BUTTON //
+
+
+  
+$("#table-list").SetEditable();
+$("#add").click(function () {
+  rowAddNew("table-list", ['', '', '']);
+});

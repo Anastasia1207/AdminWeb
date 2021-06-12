@@ -16,6 +16,13 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <!-- // Font // -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Big+Shoulders+Stencil+Display:wght@300;400;500&family=Montserrat:ital,wght@1,200&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS for CATEGORY TABLE -->
     <!-- Styles -->
     <link
@@ -49,15 +56,13 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="navigation">
         <ul>
-          <li>
-            <a href="#">
-              <span class="icon"></span>
-              <span class="title"><h2>Buy&Bye</h2></span>
-            </a>
-          </li>
+            <li>
+                <span class="title"><h2>Best Deal</h2></span>
+              </a>
+            </li>
           <li>
             <a href="Categories.html" class="linked disabled">
               <span class="icon"><i class="bi bi-card-checklist"></i></span>
@@ -80,7 +85,7 @@
       </div>
       <div class="main">
         <div class="topbar">
-          <button type="button" class="btn btn-info categories-btn">
+          <button type="button" id="add" class="btn btn-info categories-btn">
             Create Category
           </button>
 
@@ -96,11 +101,11 @@
                     type="search"
                     method="get"
                     id="frmSearch"
-                    placeholder="Search"
+                  
                     aria-label="Search"
                   />
                   <button
-                    class="btn btn-outline-success my-2 my-sm-0"
+                    class="btn btn-dark my-2 my-sm-0"
                     type="submit"
                   >
                     Search
@@ -112,10 +117,10 @@
         </div>
         <div class="table-content">
           <table
-            class="table table-borded table-responsive table-striped"
+            class="table table-borded table-responsive"
             id="table-list"
           >
-            <thead class="table-dark">
+            <thead class="table">
               <tr>
                 <th>ID</th>
                 <th>Title</th>
@@ -173,22 +178,15 @@
     </div>
     <!-- /* ======== FOOTER ======== */ -->
 
-    <!-- <footer class="footer">
-          <p class="footer-text">
+    <div class="root">
+          <p class="root-text">
             TM & &#169; 2021 BRAND N Inc. All rights reserved.
           </p>
-        </footer>
+        </div>
       </div>
-   </div> -->
+   </div>
 
     <script src="bootstable.js"></script>
-    <script>
-      //apply
-      $("#table-list").SetEditable();
-      $("#add").click(function () {
-        rowAddNew("table-list", [1, 2, 3]);
-      });
-    </script>
     <!--JS for Edit Table-->
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
