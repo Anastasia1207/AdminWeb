@@ -11,6 +11,7 @@ body {
   position: relative;
   width: 100%;
 }
+/* ---------- NAVIGATION on the left (LEFTBAR) ---------- */
 .navigation {
   position: fixed;
   width: 300px;
@@ -63,6 +64,7 @@ body {
   line-height: 60px;
   white-space: nowrap;
 }
+/* ---------- TOPBAR ---------- */
 .main {
   position: absolute;
   width: calc(100% - 300px);
@@ -79,24 +81,31 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.toggle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-
-  cursor: pointer;
-}
-.toggle::before {
-  content: "\f0c9";
-  /* font-family: ; */
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  line-height: 60px;
-  font-size: 24px;
-  text-align: center;
-  color: black;
-}
+/* ---------- SEARCH ---------- */
 .search {
-  align-items: center;
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+  /* padding-top: 150px; */
+}
+.search label {
+  position: relative;
+  width: 100%;
+}
+.search label input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px, 20px;
+  padding-left: 35px;
+  outline: none;
+  border: 2px solid black;
+}
+.search label .bi {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+.button {
+  padding-right: 100px;
 }
