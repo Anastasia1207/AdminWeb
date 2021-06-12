@@ -4,3 +4,7 @@
 .delete-button{
     color: deeppink;
 }
+.cc-col{
+    align-items: flex-end;
+    margin-right: 0px;
+}
