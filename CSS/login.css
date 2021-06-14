@@ -1,8 +1,9 @@
 .nameofcompany {
   color: blueviolet;
+  background-size: 130px;
 }
 .Login_btn {
-  color: #10b7bd;
+  color: #1aa2a7;
 }
 .Login_btn a:link {
   color: cadetblue;
@@ -12,6 +13,6 @@
   color: cadetblue;
   text-decoration: none;
 }
-h5 {
+h1 {
   font-family: "Big Shoulders Stencil Display", cursive;
 }
