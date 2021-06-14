@@ -246,3 +246,5 @@ $("#table-list").SetEditable();
 $("#add").click(function () {
   rowAddNew("table-list", ['', '', '']);
 });
+
+

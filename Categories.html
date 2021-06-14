@@ -9,6 +9,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+ 
+    <!-- Search -->
+    
     <!-- BOOTSTRAP CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -53,7 +56,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="CSS/Categories.css" />
+    <link rel="stylesheet" href="CSS/categories.css" />
   </head>
   <body>
       
@@ -82,12 +85,11 @@
             </a>
           </li>
         </ul>
-        
       </div>
     
       <div class="main">
         
-            <div class="container">
+            <div class="container" id="searchBox">
         <div class="topbar">
             <div class="row">
                 <div class="col-11">
@@ -103,14 +105,17 @@
               >
                 <form class="form-inline">
                   <input
+                  id="searchBar"
+               
                     class="form-control mr-sm-2"
                     type="search"
                     method="get"
-                    id="frmSearch"
+                   
                   
                     aria-label="Search"
                   />
                   <button
+                  id="submit"
                     class="btn btn-dark my-2 my-sm-0"
                     type="submit"
                   >
@@ -122,12 +127,12 @@
           </div>
         </div>
     </div>
-        <div class="table-content">
+        <div class="table-content" >
           <table
             class="table table-borded table-responsive"
             id="table-list"
           >
-            <thead class="table">
+            <thead class="table" >
               <tr>
                 <th>ID</th>
                 <th>Title</th>
@@ -137,7 +142,7 @@
             <tbody>
               <tr>
                 <td>1</td>
-                <td>Some Title</td>
+                <td >Some Title</td>
                 <td>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit, lorem
                   ipsum dolor sit amet consectetur adipisicing elit...
@@ -195,12 +200,16 @@
 
 
 
-    <script src="JS/bootstable.js"></script>
+    <script src="JS/categories.js"></script>
+
     <!--JS for Edit Table-->
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"
     ></script>
+
+
+  
   </body>
 </html>

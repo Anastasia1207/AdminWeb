@@ -7,6 +7,17 @@
 .name {
   font-weight: bold;
 }
-/* h2 {
+h2 {
   font-family: "Big Shoulders Stencil Display", cursive;
-} */
+}
+
+/* ======== FOOTER ======== */
+.footer-order {
+  padding-top: 705px;
+  padding-left: 10px;
+  text-decoration: black;
+}
+.footer-text-order {
+  font-size: 10px;
+  margin-inline-start: 10px;
+}
